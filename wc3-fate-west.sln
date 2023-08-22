@@ -1,0 +1,134 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wc3-fate-west-replay-parser", "wc3-fate-west-replay-parser\wc3-fate-west-replay-parser.csproj", "{1B8D767A-C195-487D-B889-D6572D7AE31D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wc3-fate-west-web", "wc3-fate-west-web\wc3-fate-west-web.csproj", "{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wc3-fate-west-main", "wc3-fate-west-main\wc3-fate-west-main.csproj", "{6907C167-8D48-4B10-8995-48E23941EA88}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45} = {1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wc3-fate-west-discord-bot", "wc3-fate-west-discord-bot\wc3-fate-west-discord-bot.csproj", "{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wc3-fate-west-data-access-layer", "wc3-fate-west-data-access-layer\wc3-fate-west-data-access-layer.csproj", "{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AA0A474-1A90-407C-8473-15204B61ED6C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wc3-fate-ghost", "wc3-ghostpp-ubuntu-18\ghost\ghost.vcxproj", "{B57A04BC-13D4-4CAD-B835-C046B9D66269}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug MySQL|Any CPU = Debug MySQL|Any CPU
+		Debug MySQL|x86 = Debug MySQL|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release MySQL|Any CPU = Release MySQL|Any CPU
+		Release MySQL|x86 = Release MySQL|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug MySQL|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug MySQL|Any CPU.Build.0 = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug MySQL|x86.ActiveCfg = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug MySQL|x86.Build.0 = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Debug|x86.Build.0 = Debug|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release MySQL|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release MySQL|Any CPU.Build.0 = Release|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release MySQL|x86.ActiveCfg = Release|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release MySQL|x86.Build.0 = Release|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release|x86.ActiveCfg = Release|Any CPU
+		{1B8D767A-C195-487D-B889-D6572D7AE31D}.Release|x86.Build.0 = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Debug MySQL|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Debug MySQL|Any CPU.Build.0 = Debug|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Debug MySQL|x86.ActiveCfg = Debug|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Debug MySQL|x86.Build.0 = Debug|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Debug|x86.Build.0 = Debug|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release MySQL|Any CPU.ActiveCfg = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release MySQL|Any CPU.Build.0 = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release MySQL|x86.ActiveCfg = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release MySQL|x86.Build.0 = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{6D577A03-9B45-4552-AAC8-7B14F0BAD4A2}.Release|x86.Build.0 = Release|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug MySQL|Any CPU.ActiveCfg = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug MySQL|Any CPU.Build.0 = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug MySQL|x86.ActiveCfg = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug MySQL|x86.Build.0 = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Debug|x86.Build.0 = Debug|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Release MySQL|Any CPU.ActiveCfg = Release|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Release MySQL|Any CPU.Build.0 = Release|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Release MySQL|x86.ActiveCfg = Release|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Release MySQL|x86.Build.0 = Release|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Release|x86.ActiveCfg = Release|Any CPU
+		{6907C167-8D48-4B10-8995-48E23941EA88}.Release|x86.Build.0 = Release|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug MySQL|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug MySQL|Any CPU.Build.0 = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug MySQL|x86.ActiveCfg = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug MySQL|x86.Build.0 = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Debug|x86.Build.0 = Debug|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Release MySQL|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Release MySQL|Any CPU.Build.0 = Release|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Release MySQL|x86.ActiveCfg = Release|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Release MySQL|x86.Build.0 = Release|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Release|x86.ActiveCfg = Release|Any CPU
+		{1DD09686-D6EC-4FF0-B2DD-A03C4226FC45}.Release|x86.Build.0 = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug MySQL|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug MySQL|Any CPU.Build.0 = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug MySQL|x86.ActiveCfg = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug MySQL|x86.Build.0 = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Debug|x86.Build.0 = Debug|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release MySQL|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release MySQL|Any CPU.Build.0 = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release MySQL|x86.ActiveCfg = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release MySQL|x86.Build.0 = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release|x86.ActiveCfg = Release|Any CPU
+		{1CCAB269-DB44-44AD-BAAA-04EE6E01F339}.Release|x86.Build.0 = Release|Any CPU
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Debug MySQL|Any CPU.ActiveCfg = Debug MySQL|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Debug MySQL|x86.ActiveCfg = Debug MySQL|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Debug MySQL|x86.Build.0 = Debug MySQL|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Debug|x86.ActiveCfg = Debug|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Debug|x86.Build.0 = Debug|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Release MySQL|Any CPU.ActiveCfg = Release MySQL|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Release MySQL|x86.ActiveCfg = Release MySQL|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Release MySQL|x86.Build.0 = Release MySQL|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Release|x86.ActiveCfg = Release|Win32
+		{B57A04BC-13D4-4CAD-B835-C046B9D66269}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E95F29E7-7ED3-450D-83F6-E4B9DB2265DC}
+	EndGlobalSection
+EndGlobal

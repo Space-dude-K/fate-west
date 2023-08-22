@@ -1,0 +1,227 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<PreserveCompilationContext>true</PreserveCompilationContext>
+	<RuntimeIdentifiers>win7-x64;win7-x86;ubuntu.20.04-x64;</RuntimeIdentifiers>
+	<SuppressDockerTargets>True</SuppressDockerTargets>
+    <RootNamespace>wc3_fate_west_web</RootNamespace>
+    <StartupObject></StartupObject>
+    <UserSecretsId>47079a84-7da2-41c0-812c-70b54cd824e5</UserSecretsId>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\wc3-fate-west-data-access-layer\wc3-fate-west-data-access-layer.csproj" />
+    <ProjectReference Include="..\wc3-fate-west-replay-parser\wc3-fate-west-replay-parser.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\MainPage.css" />
+    <None Include="wwwroot\images\AboutCarousel1.jpg" />
+    <None Include="wwwroot\images\AboutCarousel2.jpg" />
+    <None Include="wwwroot\images\AboutCarousel3.jpg" />
+    <None Include="wwwroot\images\AboutCarousel4.jpg" />
+    <None Include="wwwroot\images\AboutCarousel5.jpg" />
+    <None Include="wwwroot\images\Adblock.png" />
+    <None Include="wwwroot\images\Banhammer.gif" />
+    <None Include="wwwroot\images\DiscordImage.png" />
+    <None Include="wwwroot\images\icons\attributes\AckroydinCelluloid.png" />
+    <None Include="wwwroot\images\icons\attributes\AvengerofBlood.png" />
+    <None Include="wwwroot\images\icons\attributes\BlackLight-DarkExcalibur.png" />
+    <None Include="wwwroot\images\icons\attributes\BloomingofYellow-RedRose.png" />
+    <None Include="wwwroot\images\icons\attributes\Bravery.png" />
+    <None Include="wwwroot\images\icons\attributes\BTNAspectOfDragon.png" />
+    <None Include="wwwroot\images\icons\attributes\BTNDoubleClassEliz.png" />
+    <None Include="wwwroot\images\icons\attributes\BTNInnocentMonsterEliz.png" />
+    <None Include="wwwroot\images\icons\attributes\BTNSadisticCharisma.png" />
+    <None Include="wwwroot\images\icons\attributes\BTNTortureTechniques.png" />
+    <None Include="wwwroot\images\icons\attributes\CirculatoryShock.png" />
+    <None Include="wwwroot\images\icons\attributes\CombustionShot.png" />
+    <None Include="wwwroot\images\icons\attributes\Contagion.png" />
+    <None Include="wwwroot\images\icons\attributes\CursedCharms.png" />
+    <None Include="wwwroot\images\icons\attributes\CurseOfBlood.png" />
+    <None Include="wwwroot\images\icons\attributes\CurseofBlood2.png" />
+    <None Include="wwwroot\images\icons\attributes\DelusionalIllusion.png" />
+    <None Include="wwwroot\images\icons\attributes\Diarmuid 1.png" />
+    <None Include="wwwroot\images\icons\attributes\DivineLanguage.png" />
+    <None Include="wwwroot\images\icons\attributes\DoubleClass.png" />
+    <None Include="wwwroot\images\icons\attributes\DoubleSpear.png" />
+    <None Include="wwwroot\images\icons\attributes\DragonSkillet.png" />
+    <None Include="wwwroot\images\icons\attributes\EmbryonicFlame.png" />
+    <None Include="wwwroot\images\icons\attributes\EternalArmsMastership.png" />
+    <None Include="wwwroot\images\icons\attributes\EyeForArt.png" />
+    <None Include="wwwroot\images\icons\attributes\EyeoftheMind.png" />
+    <None Include="wwwroot\images\icons\attributes\FierceTigerForciblyClimbsaMountain.png" />
+    <None Include="wwwroot\images\icons\attributes\FlyingSpearofBarbedDeath.png" />
+    <None Include="wwwroot\images\icons\attributes\Ganryu-ShoreWillow.png" />
+    <None Include="wwwroot\images\icons\attributes\GateHalberdShot.png" />
+    <None Include="wwwroot\images\icons\attributes\GodHand.png" />
+    <None Include="wwwroot\images\icons\attributes\GoldenRule_Pillage.png" />
+    <None Include="wwwroot\images\icons\attributes\Gwalhmai.png" />
+    <None Include="wwwroot\images\icons\attributes\HonoroftheShiningLake.png" />
+    <None Include="wwwroot\images\icons\attributes\Houtengageki.png" />
+    <None Include="wwwroot\images\icons\attributes\Hrunting.png" />
+    <None Include="wwwroot\images\icons\attributes\ImmortalRedHare.png" />
+    <None Include="wwwroot\images\icons\attributes\ImperialPrivilege.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedAegis.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedArondight.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedBattleContinuation.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedBlackMagic.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedBrahmastra.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedCharisma%28ZR%29.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedCharisma.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedClairvoyance.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedDemonicCreatureoftheOceanDepths.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedDivinity%28Karna%29.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedDivinity.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedExcalibur.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedFerocity.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedFountainoftheSaint.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedGaeBolg.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedGoldenHind.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedGoldenRule.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedHecaticGraea.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedInstincts.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedIonionHetairoi.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedManaShroud.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedMilitaryTactics.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedMysticEyes.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedPresenceConcealment.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedRunes.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedSpatha.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedSwordRain.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedTerritory%28Tamamo%29.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedTerritory.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedTracing.png" />
+    <None Include="wwwroot\images\icons\attributes\ImprovedVasaviShakti.png" />
+    <None Include="wwwroot\images\icons\attributes\InnocentMonster.png" />
+    <None Include="wwwroot\images\icons\attributes\KanshoBakuyaOveredge.png" />
+    <None Include="wwwroot\images\icons\attributes\KeytotheTheater.png" />
+    <None Include="wwwroot\images\icons\attributes\Knighthood%28Gawain%29.png" />
+    <None Include="wwwroot\images\icons\attributes\Knighthood.png" />
+    <None Include="wwwroot\images\icons\attributes\Logbook.png" />
+    <None Include="wwwroot\images\icons\attributes\LordofExecution.png" />
+    <None Include="wwwroot\images\icons\attributes\LoveSpotOfSeduction.png" />
+    <None Include="wwwroot\images\icons\attributes\MadEnhancement.png" />
+    <None Include="wwwroot\images\icons\attributes\ManaBlast.png" />
+    <None Include="wwwroot\images\icons\attributes\Mind%27sEye%28True%29.png" />
+    <None Include="wwwroot\images\icons\attributes\MonohoshiZao.png" />
+    <None Include="wwwroot\images\icons\attributes\MonstrousStrength.png" />
+    <None Include="wwwroot\images\icons\attributes\Nightmare.png" />
+    <None Include="wwwroot\images\icons\attributes\NumeraloftheSaint.png" />
+    <None Include="wwwroot\images\icons\attributes\OneDropofaViper.png" />
+    <None Include="wwwroot\images\icons\attributes\PhantomAttack.png" />
+    <None Include="wwwroot\images\icons\attributes\PoisonedArrow.png" />
+    <None Include="wwwroot\images\icons\attributes\PowerofSumer.png" />
+    <None Include="wwwroot\images\icons\attributes\PranaBurst%28Karna%29.png" />
+    <None Include="wwwroot\images\icons\attributes\ProtectionfromWind.png" />
+    <None Include="wwwroot\images\icons\attributes\ProtectionofFairies.png" />
+    <None Include="wwwroot\images\icons\attributes\ProtectionoftheFairies%28Gawain%29.png" />
+    <None Include="wwwroot\images\icons\attributes\ProtectionoftheFaith.png" />
+    <None Include="wwwroot\images\icons\attributes\QuickDraw.png" />
+    <None Include="wwwroot\images\icons\attributes\RainbowPlainsandtheMazeofMirrors.png" />
+    <None Include="wwwroot\images\icons\attributes\RebelliousIntent.png" />
+    <None Include="wwwroot\images\icons\attributes\RedHare.png" />
+    <None Include="wwwroot\images\icons\attributes\Reincarnation.png" />
+    <None Include="wwwroot\images\icons\attributes\Riding.png" />
+    <None Include="wwwroot\images\icons\attributes\SacramentumofDruid.png" />
+    <None Include="wwwroot\images\icons\attributes\SacredMirror.png" />
+    <None Include="wwwroot\images\icons\attributes\Seal.png" />
+    <None Include="wwwroot\images\icons\attributes\SherwoodForest.png" />
+    <None Include="wwwroot\images\icons\attributes\ShroudofMartin.png" />
+    <None Include="wwwroot\images\icons\attributes\SpearofDeath.png" />
+    <None Include="wwwroot\images\icons\attributes\SphereBoundary.png" />
+    <None Include="wwwroot\images\icons\attributes\SpiritOrb.png" />
+    <None Include="wwwroot\images\icons\attributes\StrikeAir.png" />
+    <None Include="wwwroot\images\icons\attributes\SwordofVictory.png" />
+    <None Include="wwwroot\images\icons\attributes\TawrichandZarich.png" />
+    <None Include="wwwroot\images\icons\attributes\TheFacelessKing.png" />
+    <None Include="wwwroot\images\icons\attributes\TheKingofBlackandWhiteCheckerboard.png" />
+    <None Include="wwwroot\images\icons\attributes\TheStarofCreationthatSplitHeavenandEarth.png" />
+    <None Include="wwwroot\images\icons\attributes\ThriceThoughIWelcometheSettingSun.png" />
+    <None Include="wwwroot\images\icons\attributes\UncrownedArmsMastership.png" />
+    <None Include="wwwroot\images\icons\attributes\Vitrification.png" />
+    <None Include="wwwroot\images\icons\attributes\VorpalBlade.png" />
+    <None Include="wwwroot\images\icons\attributes\WheelofGordias.png" />
+    <None Include="wwwroot\images\icons\attributes\Witchcraft.png" />
+    <None Include="wwwroot\images\icons\attributes\Zabaniya.png" />
+    <None Include="wwwroot\images\icons\commandseal\FirstCS.jpg" />
+    <None Include="wwwroot\images\icons\commandseal\FourthCS.jpg" />
+    <None Include="wwwroot\images\icons\commandseal\SecondCS.jpg" />
+    <None Include="wwwroot\images\icons\commandseal\ThirdCS.jpg" />
+    <None Include="wwwroot\images\icons\CopyIcon.png" />
+    <None Include="wwwroot\images\icons\download.png" />
+    <None Include="wwwroot\images\icons\GHAMP.jpg" />
+    <None Include="wwwroot\images\icons\GHFullHealPot.jpg" />
+    <None Include="wwwroot\images\icons\GHGold.jpg" />
+    <None Include="wwwroot\images\icons\GHInvulBird.jpg" />
+    <None Include="wwwroot\images\icons\GHLevelUp.jpg" />
+    <None Include="wwwroot\images\icons\GHStats.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNArcherIcon.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNAssassinIcon.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNAvenger.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNBerserker.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNCaster.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNChulainn.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNDarkSaber.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNDrake.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNElizabeth.png" />
+    <None Include="wwwroot\images\icons\heroes\BTNGawain.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNGilgamesh.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNGilles.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNIskander.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNKarna.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNLancelot.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNLi.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNNero.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNNursery.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNRider.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNRobin.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNSaber.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNTamamo.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNTrueAssassin.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNVlad.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNYeopo.jpg" />
+    <None Include="wwwroot\images\icons\heroes\BTNZeroLancer.jpg" />
+    <None Include="wwwroot\images\icons\items\ItemFamiliar.jpg" />
+    <None Include="wwwroot\images\icons\items\ItemSpiritLink.jpg" />
+    <None Include="wwwroot\images\icons\items\ItemWard.jpg" />
+    <None Include="wwwroot\images\icons\Loading.gif" />
+    <None Include="wwwroot\images\icons\PlayerGameDetail.png" />
+    <None Include="wwwroot\images\icons\SaveReplay.png" />
+    <None Include="wwwroot\images\icons\stats\StatsAgi.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsArmor.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsAtk.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsHealthRegen.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsInt.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsManaRegen.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsMS.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsPrelati.jpg" />
+    <None Include="wwwroot\images\icons\stats\StatsStr.jpg" />
+    <None Include="wwwroot\images\icons\ViewLog.png" />
+    <None Include="wwwroot\images\InstructionsGameList.png" />
+    <None Include="wwwroot\images\InstructionsGameLobby.png" />
+    <None Include="wwwroot\images\InstructionsGameName.png" />
+    <None Include="wwwroot\images\InstructionsGetGames.png" />
+    <None Include="wwwroot\images\MaintenanceScreen.jpg" />
+  </ItemGroup>
+
+</Project>

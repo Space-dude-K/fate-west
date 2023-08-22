@@ -1,0 +1,49 @@
+﻿
+.hiddenRow {
+    padding: 0 !important;
+    cursor: default !important;
+}
+
+.hiddenRow tbody tr td {
+    background-color: white !important;
+    cursor: default !important;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #cdf6ff;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.innerTable {
+    margin-bottom: 0 !important;
+}
+
+.imageCenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heroicon {
+    margin-right: 10px;
+}
+
+.centerText {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.leftText {
+    text-align: left;
+}
+
+.team1Bar,
+.innerTable tbody tr td.team1total {
+    background-color: #9fc9e6 !important;
+}
+
+.team2Bar,
+.innerTable tbody tr td.team2total {
+    background-color: #ffada7 !important;
+}

@@ -1,0 +1,48 @@
+
+cd /root/web
+chmod +x wc3-fate-web
+
+cd /usr/bin/dotnet
+
+
+systemctl enable wc3-fate-web.service
+systemctl disable wc3-fate-web.service
+sudo systemctl start wc3-fate-web.service
+systemctl stop wc3-fate-web.service
+systemctl status wc3-fate-web.service
+
+journalctl -u wc3-fate-web.service
+journalctl --vacuum-time=2d
+sudo chmod 644 /etc/systemd/system/wc3-fate-web.service
+
+
+sudo /etc/init.d/apache2 status
+sudo /etc/init.d/apache2 stop
+
+sudo apt-get --purge remove apache2
+sudo apt-get autoremove
+sudo apt-get install apache2
+sudo /etc/init.d/apache2 restart
+
+sudo ufw app list
+sudo ufw allow apache
+
+curl -I http://194.37.80.65
+
+
+
+sudo a2ensite wc3-fate-web.conf
+sudo apachectl configtest
+
+
+sudo a2enmod rewrite
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod headers
+sudo a2enmod ssl
+
+
+sudo netstat -ntlp | grep LISTEN
+
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb

@@ -1,0 +1,10 @@
+/root/ghostpp/bncsutil/build/CMakeFiles/install/strip.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/install/local.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/edit_cache.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/package_source.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/install.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/list_install_components.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/rebuild_cache.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/package.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/bncsutil_static.dir
+/root/ghostpp/bncsutil/build/CMakeFiles/bncsutil.dir

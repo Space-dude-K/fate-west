@@ -1,0 +1,52 @@
+﻿@page
+@model wc3_fate_west_web.Pages.LeaderBoardsModel
+
+@section Scripts
+{
+    <script language="JavaScript" src="~/js/Jquery.tablesorter.js"></script>
+    <script language="JavaScript" src="~/js/LeaderBoards.js"></script>
+}
+@section Content
+{
+    <link href="~/css/LeaderBoards.css" rel="stylesheet">
+    <link href="~/css/Tablesorter.css" rel="stylesheet">
+
+    <div class="page-header">
+        <h1>Leaderboards</h1>
+    </div>
+
+    <div class="statsBox">
+        <div class="searchCriteriaHeader">
+            Filter Type
+        </div>
+        <div class="searchCriteriaBody" id="searchCriteriaType">
+            <label class="radio-inline"><input type="radio" name="radioCriteriaType" checked="checked" value="1">Win Rate</label>
+            <label class="radio-inline"><input type="radio" name="radioCriteriaType" value="2">KDA</label>
+            <label class="radio-inline"><input type="radio" name="radioCriteriaType" value="3">Damage Dealt</label>
+            <label class="radio-inline"><input type="radio" name="radioCriteriaType" value="4">Damage Taken</label>
+        </div>
+        <div class="searchCriteriaHeader">
+            Time (Minimum 10 games)
+        </div>
+        <div class="searchCriteriaBody" id="searchCriteriaTime">
+            <label class="radio-inline"><input type="radio" name="radioCriteriaTime" checked="checked" value="1">Last 7 Days</label>
+            <label class="radio-inline"><input type="radio" name="radioCriteriaTime" value="2">Last 30 Days</label>
+            <label class="radio-inline"><input type="radio" name="radioCriteriaTime" value="3">All Time</label>
+        </div>
+    </div>
+
+    <table id="leaderBoardsTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th class="winrateheader">Win Rate</th>
+                <th>KDA</th>
+                <th>Damage Dealt</th>
+                <th>Damage Taken</th>
+                <th>Gold Spent</th>
+            </tr>
+        </thead>
+        <tbody class="centerText">
+        </tbody>
+    </table>
+}

@@ -1,0 +1,35 @@
+﻿.statsBuildBox {
+    border-left: 1px solid #cdd2d2;
+    border-right: 1px solid #cdd2d2;
+    border-top: 1px solid #cdd2d2;
+    box-shadow: 0 1px #dcdfdf;
+    background: #E8EAEA;
+    border-radius: 2px;
+    margin: 8px;
+}
+
+.statsBuildHeader {
+    font-size: 15pt;
+    padding: 10px 15px;
+    background: #F2F2F2;
+    border-bottom: 1px solid #cdd2d2;
+}
+
+.statBuildVal {
+    font-size: 13pt;
+}
+
+.statsBuildTable {
+    margin-bottom: 0px !important;
+}
+
+.statsAttribute {
+    margin-left: 10px;
+    font-size: 13pt;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.playerNameImg {
+    margin-right: 5px;
+}

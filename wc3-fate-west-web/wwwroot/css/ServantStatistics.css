@@ -1,0 +1,156 @@
+﻿@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+
+/* tables */
+.statBuildVal {
+    font-size: 13pt;
+}
+
+.statsBuildTable {
+    margin-bottom: 0px !important;
+}
+
+    .statsBuildTable thead tr, .statsBuildTable thead tr td {
+        text-align: center;
+    }
+
+.statsAttribute {
+    margin-left: 10px;
+    font-size: 13pt;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+table.tablesorter {
+    font-family: inherit;
+    border: 1px solid #CDD2D2;
+    margin: 10px 0pt 15px;
+    width: 100%;
+    text-align: center;
+}
+
+    table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+        background-color: #e6EEEE;
+        border: 1px solid #CDD2D2;
+        padding: 20px;
+        white-space: nowrap;
+        width: 1%;
+    }
+
+    table.tablesorter thead tr .header {
+        background-image: url(tblColArrow.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+    }
+
+    table.tablesorter tbody tr:hover {
+        background-color: #d1e1d8;
+    }
+
+
+    table.tablesorter tbody td {
+        color: #3D3D3D;
+        padding: 4px;
+        vertical-align: middle;
+        border-bottom: 1px solid #CDD2D2;
+        white-space: nowrap;
+        width: 0;
+    }
+
+    table.tablesorter thead tr .headerSortUp {
+        background-image: url(tblColAsc.gif);
+    }
+
+    table.tablesorter thead tr .headerSortDown {
+        background-image: url(tblColDesc.gif);
+    }
+
+    table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+        background-color: #8dbdd8;
+    }
+
+    table.tablesorter .winrateheader {
+        min-width: 180px;
+    }
+
+.progressbar {
+    display: inline-block;
+    max-width: 75%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+}
+
+    .progressbar.blue {
+        background-color: #1f8ecd;
+        border-color: #1a78ae;
+    }
+
+    .progressbar.red {
+        background-color: #ff0000;
+        border-color: #1a78ae;
+    }
+
+.winrateval {
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.leftText {
+    text-align: left !important;
+}
+
+.searchCriteriaHeader {
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #d5d8d8;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.searchCriteriaBody {
+    font-size: 14px;
+    padding: 8px;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+.statsBox {
+    border-left: 1px solid #cdd2d2;
+    border-right: 1px solid #cdd2d2;
+    border-top: 1px solid #cdd2d2;
+    box-shadow: 0 1px #dcdfdf;
+    background: #EDEDED;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.hand-cursor:hover {
+    cursor: pointer;
+}
+
+.detail-active {
+    background-color: #BCD3C7;
+}
+
+.centerText {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-stats {
+    table-layout: fixed;
+    background-color: #F2F2F2;
+    border: 1px solid #d9d9d9;
+}
+
+    .table-stats thead tr {
+        background-color: #ededed;
+    }

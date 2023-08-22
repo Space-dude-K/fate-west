@@ -1,0 +1,55 @@
+﻿@page
+@model wc3_fate_west_web.Pages.ServantStatisticsModel
+@section Scripts
+{
+    <script language="JavaScript" src="~/js/Jquery.tablesorter.js"></script>
+    <script language="JavaScript" src="~/js/ServantStatistics.js"></script>
+}
+@section Content
+{
+    <link href="~/css/ServantStatistics.css" rel="stylesheet">
+    <!-- Begin page content -->
+
+    <div class="page-header">
+        <h1>Statistics by Servants</h1>
+    </div>
+
+    <div class="detailInfo">
+        <div id="servantInfo">
+        </div>
+        <div id="servantInfoDetail">
+        </div>
+    </div>
+
+    <table id="myTable" class="tablesorter">
+        <thead>
+            <tr>
+                <th colspan="2">Servant</th>
+                <th class="winrateheader">Win Rate</th>
+                <th>Games Played</th>
+                <th>KDA</th>
+                <th>Damage Dealt</th>
+                <th>Damage Taken</th>
+                <th>Gold Spent</th>
+            </tr>
+        </thead>
+        <tbody class="centerText">
+            @foreach (var Current in @Model.SsvModel)
+            {
+                <tr class="hand-cursor servantData" id="servant_@(Current.HeroTypeId)" data-hero="@Current.HeroTypeId" data-image="@Current.HeroImageURL" data-title="@Current.HeroTitle" data-name="@Current.HeroName">
+                    <td><img src="@Current.HeroImageURL" height=48 width=48></td>
+                    <td><div><b>@Current.HeroName</b></div><div>@Current.HeroTitle</div></td>
+                    <td class="leftText"><div class="@Current.ProgressBarColor" style="width: @Current.WinRatio"></div><span class="winrateval">@Current.WinRatio</span></td>
+                    <td>@Current.PlayCount</td>
+                    <td><b>@Current.AvgKDA</b></td>
+                    <td>@Current.AvgDamageDealt</td>
+                    <td>@Current.AvgDamageTaken</td>
+                    <td>@Current.AvgGoldSpent</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+

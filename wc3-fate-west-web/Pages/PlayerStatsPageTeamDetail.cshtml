@@ -1,0 +1,8 @@
+﻿@model IEnumerable<wc3_fate_west_data_access_layer.Data.PlayerGameTeamPlayerData>
+
+    @foreach (var Current in Model)
+    {
+        <div class="playerInfo">
+            <img height="16" width="16" src="@Current.HeroImageURL" style="margin-right: 3px">@Current.PlayerName
+        </div>
+    }

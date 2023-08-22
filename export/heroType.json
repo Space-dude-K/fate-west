@@ -1,0 +1,143 @@
+{
+    "type": "table",
+    "database": null,
+    "name": "herotype",
+    "withoutRowId": true,
+    "ddl": "CREATE TABLE herotype (HeroTypeID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, HeroUnitTypeID VARCHAR (4) NOT NULL);",
+    "columns": [
+        {
+            "name": "HeroTypeID",
+            "type": "INTEGER",
+            "constraints": [
+                {
+                    "type": "PRIMARY KEY",
+                    "definition": "PRIMARY KEY AUTOINCREMENT "
+                },
+                {
+                    "type": "UNIQUE",
+                    "definition": "UNIQUE "
+                },
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "HeroUnitTypeID",
+            "type": "VARCHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        }
+    ],
+    "rows": [
+        [
+            1,
+            "H000"
+        ],
+        [
+            4,
+            "H024"
+        ],
+        [
+            5,
+            "H028"
+        ],
+        [
+            6,
+            "H00A"
+        ],
+        [
+            7,
+            "H001"
+        ],
+        [
+            8,
+            "H01T"
+        ],
+        [
+            9,
+            "H04D"
+        ],
+        [
+            10,
+            "H008"
+        ],
+        [
+            11,
+            "H006"
+        ],
+        [
+            12,
+            "H01F"
+        ],
+        [
+            13,
+            "H009"
+        ],
+        [
+            16,
+            "H002"
+        ],
+        [
+            18,
+            "H004"
+        ],
+        [
+            19,
+            "H021"
+        ],
+        [
+            20,
+            "H03M"
+        ],
+        [
+            21,
+            "H00I"
+        ],
+        [
+            22,
+            "H01A"
+        ],
+        [
+            23,
+            "H003"
+        ],
+        [
+            24,
+            "H005"
+        ],
+        [
+            25,
+            "H00E"
+        ],
+        [
+            26,
+            "H007"
+        ],
+        [
+            27,
+            "H01X"
+        ],
+        [
+            28,
+            "H01Q"
+        ],
+        [
+            29,
+            "H00Y"
+        ],
+        [
+            30,
+            "E002"
+        ],
+        [
+            31,
+            "H02W"
+        ]
+    ]
+}

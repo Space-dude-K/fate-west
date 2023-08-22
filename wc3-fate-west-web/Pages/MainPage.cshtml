@@ -1,0 +1,78 @@
+﻿@page
+@model wc3_fate_west_web.Pages.MainPageModel
+
+@section Scripts
+{
+    <script src="~/js/MainPage.js"></script>
+}
+@section Content
+{
+    <link href="~/css/MainPage.css" rel="stylesheet">
+    <div class="page-header">
+        <h1>Recent Games</h1>
+    </div>
+    <div id="collapsibleTable" class="table-responsive">
+        <table class="table table-striped table-hover table-bordered" style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th class="centerText">Date</th>
+                    <th class="centerText">Game Name</th>
+                    <th class="centerText">Duration</th>
+                    <th class="centerText">Map Version</th>
+                    <th class="centerText">Players</th>
+                    <th class="centerText">Log</th>
+                    <th class="centerText">Replay</th>
+                    <th class="centerText">Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var Current in @Model.RecentGameDataList)
+                {
+                    <tr data-toggle="collapse" data-target="#collapsible@(Current.GameID)" class="accordion-toggle">
+                        <td class="centerText">@Current.PlayedDate</td>
+                        <td class="centerText">@Current.GameName</td>
+                        <td class="centerText">@Current.Duration</td>
+                        <td class="centerText">@Current.MapVersion</td>
+                        <td class="centerText">@Current.PlayerCount</td>
+                        <td class="centerText"><a href="/Log?gameId=@Current.GameID" data-target="#chatLogModal" data-toggle="modal"><img src="~/images/icons/ViewLog.png" alt="View the chat log"></a></td>
+                        <td class="centerText"><a href="/download/replay/@Current.GameID" class="noExpand"><img src="~/images/icons/SaveReplay.png" width=32 height=32 alt="Download Replay"></a></td>
+                        <td class="centerText">@Current.Result</td>
+                    </tr>
+                    <tr class="hiddenRow"></tr>
+                    <tr>
+                        <td colspan="9" class="hiddenRow">
+                            <div class="accordian-body collapse" data-gameId="@Current.GameID" id="collapsible@(Current.GameID)">
+                                <img src="~/images/icons/Loading.gif" height=64 width=64 class="imageCenter">
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="chatLogModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="playerGameDetail" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <img src="~/images/icons/Loading.gif" height=64 width=64 class="imageCenter">
+            </div>
+        </div>
+    </div>
+}

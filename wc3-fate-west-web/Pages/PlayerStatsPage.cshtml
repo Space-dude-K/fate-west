@@ -1,0 +1,140 @@
+﻿@page
+@model wc3_fate_west_web.Pages.PlayerStatsPageModel
+@section Scripts
+{
+    <script src="~/js/MainPage.js"></script>
+    <script src="~/js/PlayerStatsPage.js"></script>
+    <script src="~/js/Selectize.min.js"></script>
+}
+@section Content
+{
+    <link href="~/css/PlayerStatsPage.css" rel="stylesheet">
+    <link href="~/css/Selectize.bootstrap3.css" rel="stylesheet">
+
+    @if (!@Model.Pspvm.HasFoundUser)
+    {
+        <div class="page-header">
+            <h1 class="HeaderTitle">Player @Model.Pspvm.UserName has not played any games on this bot.</h1>
+            <h3 class="HeaderSubTitle">Please check spelling and server</h3>
+        </div>
+    }
+    else
+    {
+        <div class="row statsBox statsHeader">
+            <div class="col-md-6">
+                <div class="row">
+                    <h2 class="HeaderUserName">@Model.Pspvm.UserName</h2>
+                </div>
+                <div class="row WinLossPct">
+                    <span class="WIN">@Model.Pspvm.Wins Wins</span> <span class="LOSS">@Model.Pspvm.Losses Losses</span> (@Model.Pspvm.WLPercent)
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row centerText KDA">
+                    <span class="Kill">@Model.Pspvm.AveragePlayerKills</span>
+                    /
+                    <span class="Death">@Model.Pspvm.AveragePlayerDeaths</span>
+                    /
+                    <span class="Assist">@Model.Pspvm.AveragePlayerAssists</span>
+                </div>
+                <div class="row centerText">
+                    <h4>Average @Model.Pspvm.AveragePlayerKDA : 1 KDA</h4>
+                </div>
+                <div class="row centerText">
+                    <h4>Last game played on @Model.Pspvm.LastPlayedDateTime Count @Model.Pspvm.PlayerHeroStatSummaryData.Count</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="text-center col-md-4 statsSidePadding">
+                <div class="statsBox">
+                    <table class="table table-borderless SideStatsTable table-condensed">
+                        <tbody>
+                            @foreach (var Current in @Model.Pspvm.PlayerHeroStatSummaryData)
+                            {
+                                <tr>
+                                    <td rowspan="2" class="centerText sideStatsRowBorder"><img height="48" width="48" src="@(Current.HeroImageURL)"></td>
+                                    <td class="sideStatsServantName"><b>@Current.HeroName</b></td>
+                                    <td class="@(Current.HeroKDAColor)"><b>@Current.HeroAverageKDA : 1 KDA</b></td>
+                                </tr>
+                                <tr class="sideStatsRowBorder">
+                                    <td class="sideStatsText">@Current.HeroWins W @Current.HeroLosses L (@Current.HeroWLPercent)</td>
+                                    <td class="sideStatsText">@Current.HeroAverageKills / @Current.HeroAverageDeaths / @Current.HeroAverageAssists</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="collapsibleTable" class="text-center col-md-8 noPaddingRight">
+                <div class="control-group">
+                    <select id="select-servant-search" class="demo-default" placeholder="Search a Servant">
+                        <option value="">Search a Servant</option>
+                        <option value="">None</option>
+                        @foreach (var Current in @Model.Pspvm.SearchableServantData)
+                        {
+                            <option value="@(Current.HeroUnitTypeID)">@Current.HeroNameTitle</option>
+                        }
+                    </select>
+                </div>
+
+                @foreach (var @Current in @Model.Pspvm.PlayerGameSummaryData)
+                {
+                    <div class="statsBox gameFullList">
+                        <div class="gameStatsBox hoverDiv" data-toggle="collapse" data-target="#collapsible@(Current.GameID)">
+                            <div class="gameTableCell centerText gameResultInfo">
+                                <div class="@(Current.GameResult) GameResult">@Current.GameResult (@Current.TeamOneWinCount - @Current.TeamTwoWinCount)</div>
+                                <div>@Current.PlayedDate</div>
+                            </div>
+                            <div class="gameTableCell gameHeroPic centerText">
+                                <img height="48" width="48" src="@(Current.HeroImageURL)">
+                            </div>
+                            <div class="gameTableCell gameKDA centerText">
+                                <div class="@(Current.HeroKDAColor)"><b>@Current.HeroKDA : 1 KDA</b></div>
+                                <div><b>@Current.HeroKills / <span class="LOSS">@Current.HeroDeaths</span> / @Current.HeroAssists</b></div>
+                            </div>
+                            <div class="gameTableCell gameLevelGold centerText">
+                                <div>Level @Current.HeroLevel</div>
+                                <div>@Current.GoldSpent Gold</div>
+                                <div>@Current.DamageDealt Damage</div>
+                            </div>
+                            <div class="gameTableCell centerText gameTeamInfo">
+                                <div class="team">
+                                    <div class="player">
+                                        @Html.Partial("PlayerStatsPageTeamDetail", @Current.Team1List)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gameTableCell centerText gameTeamInfo">
+                                <div class="team">
+                                    <div class="player">
+                                        @Html.Partial("PlayerStatsPageTeamDetail", @Current.Team2List)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gameTableCell gameDownloadReplay">
+                                <a href="/download/replay/@(Current.GameID)" class="noExpand"><img class="gameDownloadReplayImg" src="/images/icons/SaveReplay.png" width="32" height="32" alt="Download Replay"></a>
+                            </div>
+                        </div>
+                        <div class="accordian-body collapse" data-gameId="@(Current.GameID)" id="collapsible@(Current.GameID)">
+                            <img src="/images/icons/Loading.gif" height=64 width=64 class="imageCenter">
+                        </div>
+                    </div>
+                }
+                <div id="showMoreBox" class="statsBox hoverDiv" data-lastGameId="@(Model.Pspvm.LastGameID)" data-userName="@(Model.Pspvm.UserName)" data-server="@(Model.Pspvm.Server)">
+                    Show More
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="modal fade" id="playerGameDetail" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <img src="/images/icons/Loading.gif" height=64 width=64 class="imageCenter">
+            </div>
+        </div>
+    </div>
+}

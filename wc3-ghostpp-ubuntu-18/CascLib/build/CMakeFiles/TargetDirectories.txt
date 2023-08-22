@@ -1,0 +1,7 @@
+/root/ghostpp/CascLib/build/CMakeFiles/install/strip.dir
+/root/ghostpp/CascLib/build/CMakeFiles/install/local.dir
+/root/ghostpp/CascLib/build/CMakeFiles/install.dir
+/root/ghostpp/CascLib/build/CMakeFiles/list_install_components.dir
+/root/ghostpp/CascLib/build/CMakeFiles/rebuild_cache.dir
+/root/ghostpp/CascLib/build/CMakeFiles/edit_cache.dir
+/root/ghostpp/CascLib/build/CMakeFiles/casc.dir

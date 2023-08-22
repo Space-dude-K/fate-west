@@ -1,0 +1,79 @@
+{
+    "type": "table",
+    "database": null,
+    "name": "godshelpinfo",
+    "withoutRowId": true,
+    "ddl": "CREATE TABLE godshelpinfo (GodsHelpInfoID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, GodsHelpAbilID VARCHAR (4) NOT NULL, GodsHelpName VARCHAR (30) NOT NULL);",
+    "columns": [
+        {
+            "name": "GodsHelpInfoID",
+            "type": "INTEGER",
+            "constraints": [
+                {
+                    "type": "PRIMARY KEY",
+                    "definition": "PRIMARY KEY AUTOINCREMENT "
+                },
+                {
+                    "type": "UNIQUE",
+                    "definition": "UNIQUE "
+                },
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "GodsHelpAbilID",
+            "type": "VARCHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "GodsHelpName",
+            "type": "VARCHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        }
+    ],
+    "rows": [
+        [
+            1,
+            "A04B",
+            "Gold"
+        ],
+        [
+            2,
+            "A04F",
+            "Level Up"
+        ],
+        [
+            3,
+            "A0DD",
+            "Stats"
+        ],
+        [
+            4,
+            "A04C",
+            "Anti-Magic Potion"
+        ],
+        [
+            5,
+            "A04D",
+            "Full Heal Potion"
+        ],
+        [
+            6,
+            "A00U",
+            "Invulnerable Familiar"
+        ]
+    ]
+}

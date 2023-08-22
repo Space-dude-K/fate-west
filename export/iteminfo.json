@@ -1,0 +1,205 @@
+{
+    "type": "table",
+    "database": null,
+    "name": "iteminfo",
+    "withoutRowId": true,
+    "ddl": "CREATE TABLE iteminfo (ItemID INT NOT NULL PRIMARY KEY, ItemTypeID VARCHAR (4) NOT NULL, ItemName VARCHAR (45) NOT NULL, ItemCost INT NOT NULL);",
+    "columns": [
+        {
+            "name": "ItemID",
+            "type": "INT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL "
+                },
+                {
+                    "type": "PRIMARY KEY",
+                    "definition": "PRIMARY KEY"
+                }
+            ]
+        },
+        {
+            "name": "ItemTypeID",
+            "type": "VARCHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "ItemName",
+            "type": "VARCHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "ItemCost",
+            "type": "INT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        }
+    ],
+    "rows": [
+        [
+            1,
+            "I00H",
+            "Blink Scroll",
+            100
+        ],
+        [
+            2,
+            "I00E",
+            "Blink Scroll 1.5x",
+            150
+        ],
+        [
+            3,
+            "I01A",
+            "Combination Scroll",
+            300
+        ],
+        [
+            4,
+            "I019",
+            "Combination Scroll 1.5x",
+            450
+        ],
+        [
+            5,
+            "I011",
+            "Dust of Navigation",
+            1500
+        ],
+        [
+            6,
+            "I012",
+            "Dust of Navigation 1.5x",
+            2250
+        ],
+        [
+            7,
+            "I002",
+            "Familiar",
+            300
+        ],
+        [
+            8,
+            "I005",
+            "Familiar 1.5x",
+            450
+        ],
+        [
+            9,
+            "I00A",
+            "Gem of Speed",
+            300
+        ],
+        [
+            10,
+            "I00D",
+            "Gem of Speed 1.5x",
+            450
+        ],
+        [
+            11,
+            "I00M",
+            "Mass Teleportation Scroll",
+            1500
+        ],
+        [
+            12,
+            "I00X",
+            "Mass Teleportation Scroll 1.5x",
+            2250
+        ],
+        [
+            13,
+            "I000",
+            "Rank C Magic Scroll",
+            150
+        ],
+        [
+            14,
+            "I00T",
+            "Rank C Magic Scroll 1.5x",
+            225
+        ],
+        [
+            15,
+            "I003",
+            "Sentry Ward",
+            900
+        ],
+        [
+            16,
+            "I00N",
+            "Sentry Ward 1.5x",
+            1350
+        ],
+        [
+            17,
+            "I00R",
+            "Spirit Link Scroll",
+            1500
+        ],
+        [
+            18,
+            "I00G",
+            "Spirit Link Scroll 1.5x",
+            2250
+        ],
+        [
+            19,
+            "I00B",
+            "Teleportation Scroll",
+            500
+        ],
+        [
+            20,
+            "I00U",
+            "Teleportation Scroll 1.5x",
+            750
+        ],
+        [
+            21,
+            "I00I",
+            "Red Potion",
+            800
+        ],
+        [
+            22,
+            "I00F",
+            "Red Potion",
+            1200
+        ],
+        [
+            23,
+            "vamp",
+            "Berserk Potion",
+            800
+        ],
+        [
+            24,
+            "I00W",
+            "Berserk Potion 1.5x",
+            1200
+        ],
+        [
+            25,
+            "SWAR",
+            "Sentry Ward (Familiar)",
+            800
+        ]
+    ]
+}

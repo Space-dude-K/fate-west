@@ -1,0 +1,79 @@
+﻿@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+.statsBox {
+    border-left: 1px solid #cdd2d2;
+    border-right: 1px solid #cdd2d2;
+    border-top: 1px solid #cdd2d2;
+    box-shadow: 0 1px #dcdfdf;
+    background: #EDEDED;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.searchCriteriaHeader {
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #d5d8d8;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.searchCriteriaBody {
+    font-size: 14px;
+    padding: 8px;
+    border-bottom: 1px solid #d5d8d8;
+}
+
+table.tablesorter .winrateheader {
+    min-width: 180px;
+}
+
+.progressbar {
+    display: inline-block;
+    max-width: 75%;
+    height: 8px;
+    border: 1px solid #b8bfbf;
+}
+
+    .progressbar.blue {
+        background-color: #1f8ecd;
+        border-color: #1a78ae;
+    }
+
+    .progressbar.red {
+        background-color: #ff0000;
+        border-color: #1a78ae;
+    }
+
+.winrateval {
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.leftText {
+    text-align: left !important;
+}
+
+
+.kdagreen {
+    color: #2fa01c;
+}
+
+.kdablue {
+    color: #1f8ecd;
+}
+
+.kdagold {
+    color: #e19205
+}
+
+.kdanormal {
+    color: #000000
+}
+
+.kdalow {
+    color: #879292
+}

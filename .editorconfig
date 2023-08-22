@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS1061: 'PlayerGameBuildDetailModel' does not contain a definition for 'HeroIconURL' and no accessible extension method 'HeroIconURL' accepting a first argument of type 'PlayerGameBuildDetailModel' could be found (are you missing a using directive or an assembly reference?)
+dotnet_diagnostic.CS1061.severity = warning

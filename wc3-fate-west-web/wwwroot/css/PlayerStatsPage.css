@@ -1,0 +1,217 @@
+﻿.HeaderTitle {
+    color: #242929;
+    font-size: 26px;
+}
+
+.HeaderSubTitle {
+    color: #555e5e;
+    font-size: 18px;
+}
+
+.HeaderUserName {
+    margin-top: 9px;
+    font-weight: bold;
+}
+
+
+.hoverDiv:hover {
+    background-color: #cdf6ff;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.imageCenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heroicon {
+    margin-right: 10px;
+}
+
+.centerText {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.leftText {
+    text-align: left;
+}
+
+.team1Bar,
+.innerTable tbody tr td.team1total {
+    background-color: #9fc9e6 !important;
+}
+
+.team2Bar,
+.innerTable tbody tr td.team2total {
+    background-color: #ffada7 !important;
+}
+
+.statsBox {
+    border-left: 1px solid #cdd2d2;
+    border-right: 1px solid #cdd2d2;
+    border-top: 1px solid #cdd2d2;
+    box-shadow: 0 1px #dcdfdf;
+    background: #f2f2f2;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+    .statsBox.statsHeader {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+.statsSidePadding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.noPaddingRight {
+    padding-right: 0px !important;
+}
+
+.KDA {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.GameResult {
+    font-weight: bold;
+}
+
+.Kill {
+    color: #555e5e;
+}
+
+.Death {
+    color: #c6443e;
+}
+
+.Assist {
+    color: #555e5e;
+}
+
+.WinLossPct {
+    color: #800000;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.WIN {
+    color: #1f8ecd;
+}
+
+.LOSS {
+    color: #c6443e;
+}
+
+.SideStatsTable {
+    margin-bottom: 0px !important;
+}
+
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+.sideStatsRowBorder {
+    border-bottom: 1pt solid #cbcccc !important;
+}
+
+.sideStatsText {
+    color: #555e5e
+}
+
+.sideStatsServantName {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.gameStatsBox {
+    display: table;
+    table-layout: fixed;
+    border-bottom: 1pt solid #cbcccc !important;
+    width: 100%;
+}
+
+.gameTableCell {
+    display: table-cell;
+    text-align: center;
+    color: #555;
+    margin-left: 5px;
+}
+
+#showMoreBox {
+    border-bottom: 1pt solid #cbcccc !important;
+    height: 50px;
+    line-height: 50px; /* <-- this is what you must define */
+}
+
+.gameHeroPic {
+    width: 80px;
+}
+
+.gameResultInfo {
+    width: 110px;
+}
+
+.gameKDA {
+    width: 100px;
+}
+
+.gameLevelGold {
+    width: 140px;
+}
+
+.gameTeamInfo {
+    width: 145px;
+}
+
+.gameDownloadReplay {
+    vertical-align: bottom;
+}
+
+.gameDownloadReplayImg {
+    margin-bottom: 5px;
+}
+
+.kdagreen {
+    color: #2fa01c;
+}
+
+.kdablue {
+    color: #1f8ecd;
+}
+
+.kdagold {
+    color: #e19205
+}
+
+.kdanormal {
+    color: #000000
+}
+
+.kdalow {
+    color: #879292
+}
+
+.team {
+    float: left;
+}
+
+.player {
+    text-align: left;
+    display: block;
+}
+
+.playerInfo {
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -1,0 +1,257 @@
+{
+    "type": "table",
+    "database": null,
+    "name": "herotypename",
+    "withoutRowId": true,
+    "ddl": "CREATE TABLE herotypename (HeroTypeNameID INTEGER NOT NULL UNIQUE, FK_HeroTypeID INT NOT NULL CONSTRAINT fk_HeroTypeName_HeroType REFERENCES herotype (HeroTypeID) ON DELETE NO ACTION ON UPDATE NO ACTION, Language TEXT (65532) NOT NULL, HeroName VARCHAR (20) NOT NULL, HeroTitle VARCHAR (45) NOT NULL, PRIMARY KEY (HeroTypeNameID, FK_HeroTypeID));",
+    "columns": [
+        {
+            "name": "HeroTypeNameID",
+            "type": "INTEGER",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL "
+                },
+                {
+                    "type": "UNIQUE",
+                    "definition": "UNIQUE"
+                }
+            ]
+        },
+        {
+            "name": "FK_HeroTypeID",
+            "type": "INT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL "
+                },
+                {
+                    "type": "FOREIGN KEY",
+                    "definition": "REFERENCES herotype (HeroTypeID) ON DELETE NO ACTION ON UPDATE NO ACTION"
+                }
+            ]
+        },
+        {
+            "name": "Language",
+            "type": "TEXT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "HeroName",
+            "type": "VARCHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "HeroTitle",
+            "type": "VARCHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "type": "PRIMARY KEY",
+            "definition": "PRIMARY KEY (HeroTypeNameID, FK_HeroTypeID)"
+        }
+    ],
+    "rows": [
+        [
+            1,
+            1,
+            "EN",
+            "Saber (5th)",
+            "King of Knights"
+        ],
+        [
+            2,
+            4,
+            "EN",
+            "Caster (Extra)",
+            "A Tale for Somebody's Sake"
+        ],
+        [
+            3,
+            5,
+            "EN",
+            "Avenger",
+            "All The World's Evils"
+        ],
+        [
+            4,
+            16,
+            "EN",
+            "Lancer (5th)",
+            "Prince of Light"
+        ],
+        [
+            5,
+            18,
+            "EN",
+            "Caster (5th)",
+            "Witch of the Ancient Ages"
+        ],
+        [
+            6,
+            7,
+            "EN",
+            "Archer (5th)",
+            "Counter Guardian"
+        ],
+        [
+            7,
+            23,
+            "EN",
+            "Rider (5th)",
+            "Monsterous Queen"
+        ],
+        [
+            8,
+            24,
+            "EN",
+            "Assassin (5th)",
+            "Mysterious Swordsman"
+        ],
+        [
+            9,
+            11,
+            "EN",
+            "Berserker (5th)",
+            "Greatest Warrior of Greece"
+        ],
+        [
+            10,
+            26,
+            "EN",
+            "Saber Alter",
+            "Tainted King of Knights"
+        ],
+        [
+            11,
+            10,
+            "EN",
+            "True Assassin",
+            "Genesis of the Middle East"
+        ],
+        [
+            12,
+            13,
+            "EN",
+            "Archer (4th)",
+            "King of Heroes"
+        ],
+        [
+            13,
+            6,
+            "EN",
+            "Rider (4th)",
+            "Conqueror of Macedonia"
+        ],
+        [
+            14,
+            25,
+            "EN",
+            "Caster (Extra)",
+            "Nine-Tailed Fox"
+        ],
+        [
+            15,
+            21,
+            "EN",
+            "Saber (Extra)",
+            "Knight of the Sun"
+        ],
+        [
+            16,
+            29,
+            "EN",
+            "Rider (Extra)",
+            "Voyager of the Storm"
+        ],
+        [
+            17,
+            22,
+            "EN",
+            "Assassin (Extra)",
+            "Master of Bajiquan"
+        ],
+        [
+            18,
+            12,
+            "EN",
+            "Lancer (Extra)",
+            "Innocent Monster"
+        ],
+        [
+            19,
+            28,
+            "EN",
+            "Berserker (Extra)",
+            "Traitorous General"
+        ],
+        [
+            20,
+            8,
+            "EN",
+            "Archer (Extra)",
+            "Faceless King"
+        ],
+        [
+            21,
+            27,
+            "EN",
+            "Saber (Extra)",
+            "Origin of the Flames"
+        ],
+        [
+            22,
+            19,
+            "EN",
+            "Lancer (Extra)",
+            "Merciful Saint"
+        ],
+        [
+            23,
+            20,
+            "EN",
+            "Berserkser (4th)",
+            "Knight of the Lake"
+        ],
+        [
+            24,
+            9,
+            "EN",
+            "Lancer (4th)",
+            "First Spear of the Fianna Knights"
+        ],
+        [
+            25,
+            30,
+            "EN",
+            "Caster (4th)",
+            "BlueBeard"
+        ],
+        [
+            26,
+            31,
+            "EN",
+            "Lancer (Extra)",
+            "Dragon's Daughter"
+        ]
+    ]
+}
